@@ -4,7 +4,6 @@
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
 <body>
-    <h1>Ejercicio 2</h1>
     <form method="POST">
         Nombre 1: <input type="text" name="nombre1" required><br>
         Nombre 2: <input type="text" name="nombre2" required><br>
@@ -12,8 +11,8 @@
         <button type="submit">Enviar</button>
     </form>
     {% if nombre_largo is not none %}
-    <p>Nombre más largo: {{ nombre_largo }}</p>
-    <p>Longitud: {{ longitud }}</p>
+    <p>Nombre con mayor cantidad de caracteres es: {{ nombre_largo }}</p>
+    <p>El nombre tiene : {{ longitud }} caracteres</p>
     {% endif %}
 </body>
 </html>
